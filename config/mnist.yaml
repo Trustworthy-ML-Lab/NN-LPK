@@ -1,0 +1,19 @@
+data:
+  dataset: mnist_1_7
+  normalize: False  # if normalize the dataset
+  train_size: 1000  # number of training data
+  bound_data_size: 1000  # number of data to compute bound
+  label_noise:
+  gpu: 1
+
+model:
+  seed: 0
+  width: 100
+  hidden_layer: 1
+
+train_net:
+  lr: 10
+  epochs: 101
+  solve_ode: True   # if solving gradiet flow ODE
+  eval_interval: 1  # interval when computing the ODE
+  oed_rtol: 1e-5

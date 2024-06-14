@@ -1,0 +1,19 @@
+data:
+  dataset: mnist_1_7
+  normalize: False
+  train_size: 1000
+  bound_data_size: 1000
+  label_noise: 0
+  gpu: 3
+
+model:
+  seed: 0
+  width: 100
+  hidden_layer: 1
+
+train_net:
+  lr: 10
+  epochs: 2001
+  solve_ode: True
+  eval_interval: 2000
+  oed_rtol: 1e-5
